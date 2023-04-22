@@ -7,13 +7,16 @@ class ScreenDettagli extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: const Text("screen dettagli"),
       ),
       body: Column(
         children: [
           ElevatedButton(onPressed: (){
             Navigator.pop(context);
-          }, child: const Text("cambia pagina"))
+          }, child: const Text("cambia pagina")
+          ),
+          const Text("questa è una descrizione della pizza")
         ],
       ),
     );

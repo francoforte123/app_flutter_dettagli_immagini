@@ -9,6 +9,7 @@ class ScreenImmaginiGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: const Text("sccren immagini"),
       ),
       body: Column(
@@ -22,7 +23,16 @@ class ScreenImmaginiGrid extends StatelessWidget {
                   onTap: (){
                     Navigator.push(context, MaterialPageRoute<void>(builder: (context) => const ScreenDettagli()));
                   },
-                  child: Image.asset("images/pizza_bianca.png",
+                  child: Image.asset("images/pizza_margherita.png",
+                    width: 240,
+                    fit: BoxFit.fill,
+                  ),
+                ),
+                InkWell(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute<void>(builder: (context) => const ScreenDettagli()));
+                  },
+                  child: Image.asset("images/pizza-diavola.png",
                     width: 240,
                     fit: BoxFit.fill,
                   ),
