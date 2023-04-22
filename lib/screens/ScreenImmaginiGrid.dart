@@ -20,7 +20,7 @@ class ScreenImmaginiGrid extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: (){
-                    Navigator.push(context, MaterialPageRoute<void>(builder: (context) => ScreenDettagli()));
+                    Navigator.push(context, MaterialPageRoute<void>(builder: (context) => const ScreenDettagli()));
                   },
                   child: Image.asset("images/pizza_bianca.png",
                     width: 240,

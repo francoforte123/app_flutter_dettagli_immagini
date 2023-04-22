@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:griglia_immagini_dettagli/screens/ScreenImmaginiGrid.dart';
 
 void main() {
   runApp(const MyApp());
@@ -53,9 +54,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
         title: "home",
-        home:
+        home: ScreenImmaginiGrid(),
     );
   }
 }
