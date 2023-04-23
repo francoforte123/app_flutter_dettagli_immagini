@@ -8,7 +8,7 @@ class ScreenDettagli extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text("screen dettagli"),
+        title: const Text("dettagli pizza margherita"),
       ),
       body: Column(
         children: [
