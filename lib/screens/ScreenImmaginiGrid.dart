@@ -40,7 +40,7 @@ class ScreenImmaginiGrid extends StatelessWidget {
             onTap: (){
               Navigator.push(context, MaterialPageRoute<void>(builder: (context) => const DettagliPizzaOrtolana()));
             },
-            child: Image.asset("images/pizza-ortolana.png",
+            child: Image.asset("images/pizza_ortolana.png",
               width: 100,
               height: 190,
               fit: BoxFit.fill,
