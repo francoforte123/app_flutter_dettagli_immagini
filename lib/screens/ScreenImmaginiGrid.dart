@@ -5,6 +5,9 @@ import 'DettagliPizzaDiavola.dart';
 import 'DettagliPizzaOrtolana.dart';
 import 'DettagliPizzaRustica.dart';
 import 'DettagliPizzaPestoGenovese.dart';
+import 'DettagliPizzaFichi.dart';
+import 'DettagliPizzaFioriZucca.dart';
+
 
 class ScreenImmaginiGrid extends StatelessWidget {
   const ScreenImmaginiGrid({Key? key}) : super(key: key);
@@ -63,6 +66,26 @@ class ScreenImmaginiGrid extends StatelessWidget {
               Navigator.push(context, MaterialPageRoute<void>(builder: (context) => const DettagliPizzaPestoGenovese()));
             },
             child: Image.asset("images/pizza_pesto_genovese.png",
+              width: 100,
+              height: 190,
+              fit: BoxFit.fill,
+            ),
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute<void>(builder: (context) => const DettagliPizzaFichi()));
+            },
+            child: Image.asset("images/pizza_fichi.png",
+              width: 100,
+              height: 190,
+              fit: BoxFit.fill,
+            ),
+          ),
+          InkWell(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute<void>(builder: (context) => const DettagliPizzaFioriZucca()));
+            },
+            child: Image.asset("images/pizza_fiori_zucca.png",
               width: 100,
               height: 190,
               fit: BoxFit.fill,
