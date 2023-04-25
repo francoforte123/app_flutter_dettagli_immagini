@@ -10,6 +10,7 @@ import 'DettagliPizzaFioriZucca.dart';
 import 'DettagliPizzaCarbonara.dart';
 import 'PizzaPiuCalorie.dart';
 import 'PizzaMenoCalorie.dart';
+import 'PizzaFaiDaTe.dart';
 
 class ScreenImmaginiGrid extends StatelessWidget {
   const ScreenImmaginiGrid({Key? key}) : super(key: key);
@@ -51,6 +52,20 @@ class ScreenImmaginiGrid extends StatelessWidget {
               ),
               onTap: (){
                 Navigator.push(context, MaterialPageRoute<void>(builder: (context) => const PizzaMenoCalorie()));
+              },
+            ),
+            ListTile(
+              hoverColor: Colors.cyan,
+              title: const Text(
+                "fai la pizza con ingredienti che vuoi",
+                textAlign: TextAlign.start,
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute<void>(builder: (context) => const PizzaFaiDaTe()));
               },
             ),
           ],
