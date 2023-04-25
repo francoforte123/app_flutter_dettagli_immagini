@@ -8,6 +8,7 @@ import 'DettagliPizzaPestoGenovese.dart';
 import 'DettagliPizzaFichi.dart';
 import 'DettagliPizzaFioriZucca.dart';
 import 'DettagliPizzaCarbonara.dart';
+import 'PizzaPiuCalorie.dart';
 
 class ScreenImmaginiGrid extends StatelessWidget {
   const ScreenImmaginiGrid({Key? key}) : super(key: key);
@@ -19,6 +20,42 @@ class ScreenImmaginiGrid extends StatelessWidget {
         centerTitle: true,
         title: const Text("sccren immagini"),
       ),
+
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            ListTile(
+              hoverColor: Colors.cyan,
+              title: const Text(
+                  "pizza con calorie maggiore di 290",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute<void>(builder: (context) => const PizzzaPiuCalorie()));
+              },
+            ),
+            ListTile(
+              hoverColor: Colors.cyan,
+              title: const Text(
+                "pizza con calorie minoree di 290",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute<void>(builder: (context) => const PizzzaMenoCalorie()));
+              },
+            ),
+          ],
+        ),
+      ),
+
       body: GridView.count(
           crossAxisCount: 2,
           padding: const EdgeInsets.all(10),
