@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:griglia_immagini_dettagli/screens/ScreenImmaginiGrid.dart';
+import 'package:griglia_immagini_dettagli/screens/LoadingPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return const MaterialApp(
         title: "home",
-        home: ScreenImmaginiGrid(),
+        home: LoadingPage(),
     );
   }
 }
